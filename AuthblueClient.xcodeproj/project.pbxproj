@@ -11,6 +11,13 @@
 		0A6FC7D12AC258480065CCF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6FC7D02AC258480065CCF4 /* ContentView.swift */; };
 		0A6FC7D32AC2584A0065CCF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A6FC7D22AC2584A0065CCF4 /* Assets.xcassets */; };
 		0A6FC7D62AC2584A0065CCF4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A6FC7D52AC2584A0065CCF4 /* Preview Assets.xcassets */; };
+		0A6FC7E02AC258E40065CCF4 /* Parent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6FC7DF2AC258E40065CCF4 /* Parent.swift */; };
+		0A6FC7E22AC2590B0065CCF4 /* QrScanScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6FC7E12AC2590B0065CCF4 /* QrScanScreen.swift */; };
+		0A6FC7E42AC259370065CCF4 /* ClinkLinkScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6FC7E32AC259370065CCF4 /* ClinkLinkScreen.swift */; };
+		0A6FC7E62AC25A420065CCF4 /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6FC7E52AC25A420065CCF4 /* Permission.swift */; };
+		0A6FC7E82AC25A5F0065CCF4 /* QRScannerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6FC7E72AC25A5F0065CCF4 /* QRScannerDelegate.swift */; };
+		0A6FC7EA2AC25A760065CCF4 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6FC7E92AC25A760065CCF4 /* ScannerView.swift */; };
+		0A6FC7EC2AC25A910065CCF4 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6FC7EB2AC25A910065CCF4 /* CameraView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		0A6FC7D02AC258480065CCF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0A6FC7D22AC2584A0065CCF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A6FC7D52AC2584A0065CCF4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0A6FC7DF2AC258E40065CCF4 /* Parent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parent.swift; sourceTree = "<group>"; };
+		0A6FC7E12AC2590B0065CCF4 /* QrScanScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrScanScreen.swift; sourceTree = "<group>"; };
+		0A6FC7E32AC259370065CCF4 /* ClinkLinkScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinkLinkScreen.swift; sourceTree = "<group>"; };
+		0A6FC7E52AC25A420065CCF4 /* Permission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permission.swift; sourceTree = "<group>"; };
+		0A6FC7E72AC25A5F0065CCF4 /* QRScannerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerDelegate.swift; sourceTree = "<group>"; };
+		0A6FC7E92AC25A760065CCF4 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		0A6FC7EB2AC25A910065CCF4 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,10 @@
 		0A6FC7CD2AC258480065CCF4 /* AuthblueClient */ = {
 			isa = PBXGroup;
 			children = (
+				0A6FC7ED2AC25B0E0065CCF4 /* Util */,
+				0A6FC7DE2AC258D90065CCF4 /* Model */,
+				0A6FC7DD2AC258D20065CCF4 /* ViewModel */,
+				0A6FC7DC2AC258CC0065CCF4 /* View */,
 				0A6FC7CE2AC258480065CCF4 /* AuthblueClientApp.swift */,
 				0A6FC7D02AC258480065CCF4 /* ContentView.swift */,
 				0A6FC7D22AC2584A0065CCF4 /* Assets.xcassets */,
@@ -65,6 +83,41 @@
 				0A6FC7D52AC2584A0065CCF4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0A6FC7DC2AC258CC0065CCF4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A6FC7DF2AC258E40065CCF4 /* Parent.swift */,
+				0A6FC7E12AC2590B0065CCF4 /* QrScanScreen.swift */,
+				0A6FC7E32AC259370065CCF4 /* ClinkLinkScreen.swift */,
+				0A6FC7E92AC25A760065CCF4 /* ScannerView.swift */,
+				0A6FC7EB2AC25A910065CCF4 /* CameraView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A6FC7DD2AC258D20065CCF4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0A6FC7DE2AC258D90065CCF4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A6FC7E52AC25A420065CCF4 /* Permission.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A6FC7ED2AC25B0E0065CCF4 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				0A6FC7E72AC25A5F0065CCF4 /* QRScannerDelegate.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +191,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A6FC7D12AC258480065CCF4 /* ContentView.swift in Sources */,
+				0A6FC7EA2AC25A760065CCF4 /* ScannerView.swift in Sources */,
+				0A6FC7E22AC2590B0065CCF4 /* QrScanScreen.swift in Sources */,
+				0A6FC7EC2AC25A910065CCF4 /* CameraView.swift in Sources */,
+				0A6FC7E62AC25A420065CCF4 /* Permission.swift in Sources */,
 				0A6FC7CF2AC258480065CCF4 /* AuthblueClientApp.swift in Sources */,
+				0A6FC7E82AC25A5F0065CCF4 /* QRScannerDelegate.swift in Sources */,
+				0A6FC7E02AC258E40065CCF4 /* Parent.swift in Sources */,
+				0A6FC7E42AC259370065CCF4 /* ClinkLinkScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +335,7 @@
 				DEVELOPMENT_TEAM = B4C7245FA7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow app to use camera for QR scan";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,8 +345,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kenmaro.AuthblueClient;
+				MARKETING_VERSION = 0.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.authblue.demoClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -304,6 +365,7 @@
 				DEVELOPMENT_TEAM = B4C7245FA7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow app to use camera for QR scan";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -313,8 +375,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kenmaro.AuthblueClient;
+				MARKETING_VERSION = 0.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.authblue.demoClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
